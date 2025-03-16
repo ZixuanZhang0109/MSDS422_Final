@@ -11,8 +11,7 @@
 - [Research Objectives](#research-objectives)
 - [Features](#features)
 - [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Getting Start](#getting-start)
 - [Methodology](#methodology)
 - [Results](#results)
 - [Deployment Strategy](#deployment-strategy)
@@ -54,26 +53,25 @@ This project includes:
 - **Source:** The dataset includes **numerical and categorical** features related to diet, activity, and BMI.
 - **Target Variable:** Obesity levels classified into seven categories.
 
-## Installation
-To set up and run this project, install the required dependencies:
+## Getting Start
+For getting started with this project, follow these steps:
 
-```bash
-git clone https://github.com/yourusername/obesity-risk-prediction.git
-cd obesity-risk-prediction
-pip install -r requirements.txt
-```
+1. **Clone the Repository**  
+   Use Git to clone the repository to your local machine. You can do this using either **SSH** (recommended) or **HTTPS**, depending on your GitHub authentication setup.
 
-## Usage
-Run the Jupyter Notebook for analysis:
+2. **Navigate to the Project Directory**  
+   After cloning, navigate into the project folder.
 
-```bash
-jupyter notebook Obesity_Prediction.ipynb
-```
+3. **Install Dependencies**  
+   Ensure you have Python installed, then use `pip` to install the necessary dependencies from the `requirements.txt` file.
+
+4. **Run the Jupyter Notebook**  
+   Launch Jupyter Notebook and open the relevant `.ipynb` file to explore the analysis and run the models.
+
+Make sure you have the appropriate GitHub access permissions if using SSH, or generate a GitHub personal access token (PAT) if using HTTPS authentication.
 
 ## Methodology
-- **Data Preprocessing:** Handling missing values, encoding categorical variables, and feature selection.
-- **Model Training & Evaluation:** Models trained with **GridSearchCV** and cross-validation.
-- **Hyperparameter Tuning:** Optimized parameters for each model to maximize accuracy.
+The study follows a structured machine learning pipeline, including data preprocessing, exploratory data analysis, feature engineering, model selection, training, evaluation, and hyperparameter tuning. Various classification models such as Random Forest, Gradient Boosting, Support Vector Machines (SVM), and Multi-Layer Perceptron (MLP) were implemented to predict obesity levels based on behavioral and demographic features. Data balancing techniques like SMOTE were used to handle class imbalances, and model performance was assessed using metrics such as accuracy, precision, recall, and F1-score.
 
 ## Results
 | Model | Accuracy (%) |
@@ -84,25 +82,16 @@ jupyter notebook Obesity_Prediction.ipynb
 | Random Forest | 94% |
 | Deep Neural Network | 93.38% |
 
-- **Key Takeaways:**
-  - **MLP performed best** with the highest accuracy.
-  - **SVM and Gradient Boosting** also showed strong results.
-  - **Deep learning models require larger datasets** to generalize better.
+The study found that MLP outperformed all other models, achieving the highest accuracy (97.64%) for obesity classification. SVM and Gradient Boosting also performed well, with accuracies above 96%. Feature importance analysis indicated that key predictors of obesity include weight, height, family history, diet, and physical activity levels. The results highlight the effectiveness of machine learning in identifying obesity risk factors but also reveal limitations, such as dataset biases and missing socioeconomic variables.
 
 ## Deployment Strategy
-- The model is designed for **on-premises deployment** to ensure **data privacy**.
-- The machine learning pipeline is **automated** for continuous updates.
-- Model integration with **healthcare applications** is recommended.
+The model is designed for local deployment to ensure data privacy and security. An automated machine learning pipeline is implemented for real-time or batch predictions. The system includes regular performance monitoring, retraining mechanisms, and an alert system to detect model drift. Future deployment considerations include integrating the model into public health platforms, mobile health applications, or government healthcare initiatives.
 
 ## Limitations
-- The dataset lacks **socioeconomic and genetic factors**, which can impact obesity risk.
-- Limited generalizability since the data primarily comes from Latin American countries.
-- Some models (DNN) were prone to **overfitting due to small dataset size**.
+While the models performed well, several limitations exist. The dataset lacks socioeconomic and genetic variables, which are crucial for understanding obesity risk. The generalizability of the models is limited due to regional variations in obesity prevalence. Hyperparameter tuning was done using GridSearchCV, but alternative methods like Bayesian Optimization could improve performance. Additionally, deep learning models underperformed due to dataset constraints, suggesting that simpler models may be more suitable for structured health data.
 
 ## Future Improvements
-- **Expand dataset** to include more diverse populations.
-- **Improve feature engineering** by adding socioeconomic and behavioral data.
-- **Optimize model selection** using deep learning advancements.
+To enhance model performance and applicability, future work should include expanding the dataset with socioeconomic and behavioral variables, exploring alternative feature selection techniques, and improving model interpretability. Further studies could investigate transfer learning approaches to apply the model across different populations. Additionally, integrating obesity prediction with real-time health monitoring systems and policy-driven interventions would increase its practical impact.
 
 ## License
 This project is licensed under the [MIT License](LICENSE) - see the file for details.
