@@ -105,4 +105,4 @@ jupyter notebook Obesity_Prediction.ipynb
 - **Optimize model selection** using deep learning advancements.
 
 ## License
-This project is licensed under the [MIT License](LICENSE.md) - see the file for details.
+This project is licensed under the [MIT License](LICENSE) - see the file for details.
