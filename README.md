@@ -1,5 +1,9 @@
-# MSDS422_Final
-# Abstract/Executive Summary  
+# MSDS422_Final Group 3 Project: Obesity Risk Prediction: A Machine Learning Approach
+---
+**Authors**: Jinghan Feng, Yahui Qian, Zixuan Zhang, Chenyi Zhao
+
+**Dataset**: Access from [Kaggle - Obesity Prediction Dataset](https://www.kaggle.com/datasets/ruchikakumbhar/obesity-prediction/code)
+## Abstract/Executive Summary  
 Obesity is a growing public health concern in Latin America, significantly impacting individual health and straining healthcare systems. This research investigates the complex factors contributing to obesity in Mexico, Colombia, and Peru, employing a multidisciplinary approach that combines dataset analysis, statistical modeling, and machine learning techniques.  
 
 The research highlights key findings such as the role of socioeconomic, dietary, and behavioral factors and explores advanced computational tools for estimating obesity levels and predicting associated risks. This study leverages a dataset containing 17 attributes and 2,111 records, categorizing individuals into seven distinct obesity levels. The dataset encompasses diverse features such as demographic data, physical measurements, and lifestyle behaviors, including caloric intake, physical activity frequency, and alcohol consumption.  
