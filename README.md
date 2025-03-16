@@ -63,7 +63,7 @@ For getting started with this project, follow these steps:
    After cloning, navigate into the project folder.
 
 3. **Install Dependencies**  
-   Ensure you have Python installed, then use `pip` to install the necessary dependencies from the `_requirements.txt` file.
+   Ensure you have Python installed, then use `pip` to install the necessary dependencies from the `requirements.txt` file.
 
 4. **Run the Jupyter Notebook**  
    Launch Jupyter Notebook and open the relevant `.ipynb` file to explore the analysis and run the models.
