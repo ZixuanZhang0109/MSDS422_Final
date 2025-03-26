@@ -53,6 +53,7 @@ This project includes:
 ## Dataset
 - **Source:** The dataset includes **numerical and categorical** features related to diet, activity, and BMI.
 - Numerical Feature Distributions: ![Numerical Feature Distributions](images/numerical_distributions.png)
+- Categorical Feature Distributions: ![Categorical Feature Distributions](images/categorical_distributions.png)
 - **Target Variable:** Obesity levels classified into seven categories.
 
 ## Getting Start
