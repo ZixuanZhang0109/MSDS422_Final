@@ -80,15 +80,25 @@ The study follows a structured machine learning pipeline, including data preproc
 Model Comparison (Accuracy)
 ![Model Comparison](images/model_accuracy_comparison.png)
 
-| Model | Accuracy (%) |
-|--------|------------|
-| MLP | **97.64%** |
-| SVM | 96.69% |
-| Gradient Boosting | 96.22% |
-| Random Forest | 94% |
-| Deep Neural Network | 93.38% |
+The study found that **MLP** outperformed all other models, achieving the highest accuracy (**97.64%**) for obesity classification. SVM and Gradient Boosting also performed well, with accuracies above 96%. Feature importance analysis indicated that key predictors of obesity include weight, height, family history, diet, and physical activity levels. The results highlight the effectiveness of machine learning in identifying obesity risk factors but also reveal limitations, such as dataset biases and missing socioeconomic variables.
 
-The study found that MLP outperformed all other models, achieving the highest accuracy (97.64%) for obesity classification. SVM and Gradient Boosting also performed well, with accuracies above 96%. Feature importance analysis indicated that key predictors of obesity include weight, height, family history, diet, and physical activity levels. The results highlight the effectiveness of machine learning in identifying obesity risk factors but also reveal limitations, such as dataset biases and missing socioeconomic variables.
+### MLP Model Performance Visualizations
+
+#### Confusion Matrix
+Shows the classification performance across all 7 obesity categories.
+
+![Confusion Matrix](images/confusion_matrix_mlp.png)
+
+#### ROC Curve
+Illustrates the true positive rate vs. false positive rate for each class.
+
+![ROC Curve](images/roc_curve_mlp.png)
+
+#### Precision-Recall Curve
+Highlights the trade-off between precision and recall for each class.
+
+![Precision-Recall Curve](images/precision_recall_curve_mlp.png)
+
 
 ## Deployment Strategy
 The model is designed for local deployment to ensure data privacy and security. An automated machine learning pipeline is implemented for real-time or batch predictions. The system includes regular performance monitoring, retraining mechanisms, and an alert system to detect model drift. Future deployment considerations include integrating the model into public health platforms, mobile health applications, or government healthcare initiatives.
