@@ -40,6 +40,8 @@ Obesity has emerged as a growing epidemic in Latin America, driven by a converge
 ## Features
 This project includes:
 - **Exploratory Data Analysis (EDA):** Feature distributions, correlations, and key insights.
+- Feature Correlation Matrix: 
+![Correlation Matrix](images/correlation_matrix.png)
 - **Feature Engineering:** Handling missing data, encoding categorical variables, and scaling numerical features.
 - **Machine Learning Models:** Comparison of multiple models:
   - Random Forest
@@ -51,8 +53,9 @@ This project includes:
 
 ## Dataset
 - **Source:** The dataset includes **numerical and categorical** features related to diet, activity, and BMI.
+- Numerical Feature Distributions: ![Numerical Feature Distributions](images/numerical_distributions.png)
 - **Target Variable:** Obesity levels classified into seven categories.
-![Numerical Feature Distributions](images/numerical_distributions.png)
+
 ## Getting Start
 For getting started with this project, follow these steps:
 
@@ -74,6 +77,9 @@ Make sure you have the appropriate GitHub access permissions if using SSH, or ge
 The study follows a structured machine learning pipeline, including data preprocessing, exploratory data analysis, feature engineering, model selection, training, evaluation, and hyperparameter tuning. Various classification models such as Random Forest, Gradient Boosting, Support Vector Machines (SVM), and Multi-Layer Perceptron (MLP) were implemented to predict obesity levels based on behavioral and demographic features. Data balancing techniques like SMOTE were used to handle class imbalances, and model performance was assessed using metrics such as accuracy, precision, recall, and F1-score.
 
 ## Results
+Model Comparison (Accuracy)
+![Model Comparison](images/model_accuracy_comparison.png)
+
 | Model | Accuracy (%) |
 |--------|------------|
 | MLP | **97.64%** |
